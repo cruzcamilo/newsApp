@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="settings_order_by_label">Ordenar por</string>
+    <string name="settings_order_by_most_older_label">Más antiguo</string>
+    <string name="settings_order_by_relevance_label">Relevancia</string>
+    <string name="settings_order_by_most_recent_label" >Más Reciente</string>
+    <string name="settings_search_content">Buscar contenido</string>
+</resources>
