@@ -5,7 +5,7 @@ returning 10 results
 
 # Features
 
-- Implements `Loader`, `ListView` and`SharedPreferences`
+- Use of `Loader`, `ListView` and`SharedPreferences`.
 - Input field to enter search topic.
 - Allows to organize results by relevance or date.
 - Each results redirects to the official page to read the full news.
@@ -24,13 +24,12 @@ relacionadas con un tema y retornar 10 resultados.
 
 # Características
 
-- Implementa `Loader`, `ListView` y `SharedPreferences`
+- Uso de `Loader`, `ListView` y `SharedPreferences`
 - Campo de entrada para ingresar el tema a consultar
 - Permite organizar resultados por relevancia o antigüedad.
 - Cada resultado redirecciona a la página oficial para leer la noticia completa.
 
 # Screenshots
-
 
 ![](Screenshots/screenshot1.png)
 ![](Screenshots/screenshot2_spanish.png)
