@@ -14,7 +14,8 @@ public class Publication {
     private Bitmap thumbnailImage;
 
 
-    public Publication(String title, String section, String publicationDate, String url, String trailText, String thumbnail, Bitmap thumbnailImage) {
+    public Publication(String title, String section, String publicationDate, String url,
+                       String trailText, String thumbnail, Bitmap thumbnailImage) {
         this.title = title;
         this.section = section;
         this.publicationDate = publicationDate;

@@ -28,7 +28,8 @@ import static com.example.android.newsapp.PublicationActivity.LOG_TAG;
 public final class QueryUtils {
 
     /**
-     * Query The Guardian Publications dataset and return an {@link List <Publication>} object to represent a list of news.
+     * Query The Guardian Publications dataset and return an {@link List <Publication>} object to
+     * represent a list of news.
      */
     public static List<Publication> fetchPublicationData(String requestUrl) {
 
@@ -165,7 +166,8 @@ public final class QueryUtils {
 
                 Bitmap imageThumbnail = getImage(thumbnail);
 
-                publications.add(new Publication(title, section, publicationDate, url, trailText, thumbnail, imageThumbnail));
+                publications.add(new Publication(title, section, publicationDate, url, trailText,
+                        thumbnail, imageThumbnail));
             }
 
         } catch (JSONException e) {

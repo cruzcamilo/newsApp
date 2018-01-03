@@ -1,7 +1,6 @@
 package com.example.android.newsapp;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.InputStream;
-import java.net.URL;
 import java.util.ArrayList;
-
-/**
- * Created by User on 01/06/2017.
- */
 
 public class PublicationAdapter extends ArrayAdapter<Publication> {
 
@@ -80,16 +73,5 @@ public class PublicationAdapter extends ArrayAdapter<Publication> {
         dateToView = dateToView.replace("Z", "");
 
         return dateToView;
-    }
-
-    private Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "drawable");
-            return d;
-        } catch (Exception e) {
-            System.out.println("Exc=" + e);
-            return null;
-        }
     }
 }

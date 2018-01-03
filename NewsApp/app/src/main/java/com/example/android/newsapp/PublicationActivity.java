@@ -58,14 +58,14 @@ public class PublicationActivity extends AppCompatActivity implements LoaderMana
         publicationListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Find the current earthquake that was clicked on
+                // Find the current news that was clicked on
                 Publication currentPublication = mAdapter.getItem(position);
 
                 // Convert the String URL into a URI object (to pass into the Intent constructor)
-                Uri earthquakeUri = Uri.parse(currentPublication.getUrl());
+                Uri publicationUri = Uri.parse(currentPublication.getUrl());
 
-                // Create a new intent to view the earthquake URI
-                Intent websiteIntent = new Intent(Intent.ACTION_VIEW, earthquakeUri);
+                // Create a new intent to view the news URI
+                Intent websiteIntent = new Intent(Intent.ACTION_VIEW, publicationUri);
 
                 // Send the intent to launch a new activity
                 startActivity(websiteIntent);
@@ -118,7 +118,7 @@ public class PublicationActivity extends AppCompatActivity implements LoaderMana
         uriBuilder.appendQueryParameter("order-by", orderBy);
         uriBuilder.appendQueryParameter("q", searchContent);
         uriBuilder.appendQueryParameter("api-key", "test");
-        Log.e(LOG_TAG, uriBuilder.toString());
+        Log.v(LOG_TAG, uriBuilder.toString());
         return new PublicationLoader(this, uriBuilder.toString());
     }
 
@@ -132,7 +132,7 @@ public class PublicationActivity extends AppCompatActivity implements LoaderMana
         // Set empty state text to display "No News found."
         mEmptyStateTextView.setText(R.string.empty_state);
 
-        // Clear the adapter of previous earthquake data
+        // Clear the adapter of previous news data
         Log.e(LOG_TAG, " onLoadFinished");
         mAdapter.clear();
 

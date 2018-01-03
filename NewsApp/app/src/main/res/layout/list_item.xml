@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:textSize="12sp"
             tools:text="Movies" />
@@ -29,7 +30,6 @@
             tools:text="02/03/1989/" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -49,35 +49,35 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ellipsize="end"
                 android:maxLines="3"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-
-                tools:text="Crónica: Culpa comprometida" />
+                tools:text="Johann Sebastian Bach" />
 
             <TextView
                 android:id="@+id/trailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:ellipsize="end"
                 android:maxLines="3"
                 android:textSize="14sp"
-                tools:text="Abundaban los travestis, los indigentes, los drigadictos; los ùnicos 'sanos' eran los que iban a " />
+                tools:text="(21. Marz 1685 in Einsenach; 28 Juli 1750 in Leipzig) deutscher Komponist" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/thumbnail"
             android:layout_width="@dimen/image_item_height"
             android:layout_height="@dimen/image_item_height"
-            android:src="@android:mipmap/sym_def_app_icon"
-            android:scaleType="centerCrop"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            />
+            android:scaleType="centerCrop"
+            android:src="@android:mipmap/sym_def_app_icon" />
     </LinearLayout>
 
 </LinearLayout>

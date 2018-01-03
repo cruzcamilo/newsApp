@@ -22,15 +22,15 @@ public class PublicationLoader extends AsyncTaskLoader<List<Publication>> {
     @Override
     protected void onStartLoading() {
         forceLoad();
-        Log.e(LOG_TAG, " start loading");
+        Log.v(LOG_TAG, " start loading");
     }
 
     @Override
     public List<Publication> loadInBackground() {
-        // Perform the network request, parse the response, and extract a list of earthquakes.
+        // Perform the network request, parse the response, and extract a list of publications.
         List<Publication> publications= QueryUtils.fetchPublicationData(mUrl);
 
-        Log.e(LOG_TAG, " load in background");
+        Log.v(LOG_TAG, " load in background");
         return publications;
     }
 }
