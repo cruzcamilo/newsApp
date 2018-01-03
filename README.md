@@ -19,8 +19,8 @@ returning 10 results
 
 # News App
 
-Esta app implementa la API [The Guardian Open Plataform](http://open-platform.theguardian.com/) para realizar una consulta sobre noticias 
-relacionadas con un tema y retornar 10 resultados.
+Esta app implementa la API [The Guardian Open Plataform](http://open-platform.theguardian.com/) para realizar consultas sobre noticias 
+relacionadas con el tema ingresado y retornar 10 resultados.
 
 # Características
 
